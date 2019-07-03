@@ -34,7 +34,7 @@ class Location extends React.Component {
 
         const { locations, residentsEarth } = this.state
         const locationList = locations.map(location => <li onClick={this.handleClick} key={location.name+1}>{location.name}</li>)
-        const characterList = residentsEarth.map(resident => <li>{resident}</li>)
+        const characterList = residentsEarth.map(resident => <li key={resident+1}>{resident}</li>)
         console.log(residentsEarth)
         console.log(locations)
 
